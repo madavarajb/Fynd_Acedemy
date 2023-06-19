@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body{
+            background-color: #190571;
+            
+        }
+        .squar{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width:300px;
+            height:300px;
+            border-radius: 20%;
+            background: radial-gradient(circle at 30% 107%, #f7ee93 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function:ease;
+
+        }
+        .innerbox{
+            width: 200px;
+            height: 200px;
+            border: 20px solid white;
+            border-radius: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function:ease;
+
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            border: 17px solid white;
+            border-radius:50px; 
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function:ease;
+   
+        }
+        .innerbox::after{
+            content: '';
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top:23%;
+            left:70%;
+        }
+        .circle:hover{
+            width: 100px;
+            height: 100px;
+            border: 25px solid rgb(255, 255, 255);
+        }
+        .innerbox:hover{
+            width: 300px;
+            height: 300px;
+            border: 30px solid rgb(255, 255, 255);
+        }
+        .squar:hover{
+            width: 450px;
+            height: 450px;    
+        }
+    </style>
+</head>
+<body>
+    <div class="squar">
+        <div class="innerbox">
+            <div class="circle"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
