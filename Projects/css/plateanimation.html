@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plate</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: darkcyan;
+        }
+        .plate{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 20%;
+            right:10%;
+            background-color: rgb(225, 217, 217);
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px 5px;
+            
+        }
+        .innerplate{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            right: 17%;
+            top:15%;
+            border: 5px solid rgb(237, 228, 228);
+            /*box-shadow: 0px 0px 30px 0px;*/
+
+        }
+        .tray{
+            z-index: -1;
+            position: absolute;
+            top:20%;
+            right: 1%;
+            width: 600px;
+            height: 350px;
+            background-color: rgb(164, 164, 164);
+            border-radius: 40px;
+            box-shadow: 0px 20px 10px 5px rgb(72, 68, 68);
+            transform: rotate(-45deg);
+            animation: slide 3s;
+        }
+       .innertray{
+            position: absolute;
+            top:15%;
+            right: 6%;
+            width: 500px;
+            height: 250px;
+            border: 5px solid rgb(148, 145, 145);
+            border-radius: 40px;
+        }
+
+        @keyframes slide{
+            from{
+                transform: rotate(-90deg);
+                right: -50%;
+            }
+            to{
+                transform: rotate(-45deg);
+                right: 1%;
+            }
+        }
+        /*.t1 p{
+            position: absolute;
+            top:30%;
+            left:10%;
+            font-family: Impact;
+            color: rgb(127, 29, 29);
+            word-spacing: 2px;
+            
+            font-size: 50px;
+
+        }*/
+    </style>
+</head>
+<body>
+    <div class="plate">
+        <div class="innerplate"></div>
+    </div>
+    <div class="tray">
+        <div class="innertray"></div>
+    </div>
+    <!--div class="t1">
+        <p>IF YOU ARE HUNGRY !</p>
+    </div-->
+    
+    
+</body>
+</html>
