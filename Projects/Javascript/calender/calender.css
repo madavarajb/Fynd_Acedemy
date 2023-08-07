@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkcyan;
+}
+.container{
+    position: absolute;
+    left:37%;
+    top:30%;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+.months{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+button#left{
+    position: absolute;
+    left: 80%;
+    top: 6%;
+   font-size: 18px;
+   background-color: white;
+   border: none;
+   cursor: pointer;
+   opacity: 50%;
+}
+button#left:hover{
+    opacity: 100%;
+}
+button#right{
+    position: absolute;
+    left: 90%;
+    top: 6%;
+   font-size: 18px;
+   background-color: white;
+   border: none;
+   cursor: pointer;
+   opacity: 50%;
+}
+button#right:hover{
+    opacity: 100%;
+}
+ul.days{
+    list-style-type: none;
+    padding-top: 18px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+li{
+    display: inline;
+    padding: 7px;
+}
+
+ul.numbers {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 4px;
+  }
+  
+  li.num,
+  li.inactive {
+    padding: 12px;
+    padding-top: 7px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  
+  li.inactive {
+    opacity: 50%;
+  }
+  
+  li.num:hover,
+  li.inactive:hover {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+.numactive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    
+}
+ 

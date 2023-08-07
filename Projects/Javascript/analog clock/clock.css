@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+button{
+    position: absolute;
+    left: 45%;
+    top:20%;
+    background-color: yellow;
+    color: black;
+    padding: 10px 25px;
+    font-family: 'Franklin Gothic Medium';
+    border:none;
+    cursor: pointer;
+}
+.outerclock{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 300px;
+    height: 300px;
+    border: 8px solid white;
+    border-radius: 50%;
+    border-style: none;
+}
+.innerline1{
+    position:absolute;
+    width: 300px;
+    left: -3%;
+    top: 50%;
+    border: 3px solid darkcyan;
+}
+.innerline2{
+    position:absolute;
+    width: 300px;
+    left: -1%;
+    bottom: 0%;
+    border: 3px solid darkcyan;
+    transform: rotate(90deg);
+}
+.multiline{
+    position:absolute;
+    width: 300px;
+    left: -1%;
+    bottom: 0%;
+    border: 1px solid green;
+    transform: rotate(30deg);
+}
+.multiline2{
+    position:absolute;
+    width: 300px;
+    left: -1%;
+    bottom: 0%;
+    border: 1px solid green;
+    transform: rotate(60deg);
+}
+.multiline3{
+    position:absolute;
+    width: 300px;
+    left: -1%;
+    bottom: 0%;
+    border: 1px solid green;
+    transform: rotate(120deg);
+}
+.multiline4{
+    position:absolute;
+    width: 300px;
+    left: -1%;
+    bottom: 0%;
+    border: 1px solid green;
+    transform: rotate(150deg);
+}
+.innerclock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background-color:white;
+    border-radius: 50%;
+}
+/* .smallcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color:rgb(51, 48, 48);
+    border-radius: 50%;
+} */
+.minute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 2px;
+    background-color: darkcyan;
+  }
+  
+  .hours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 2px;
+    background-color: darkblue;
+  }
+  
+  .secnd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 2px;
+    background-color: red;
+  }
